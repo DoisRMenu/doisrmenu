@@ -38,7 +38,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <img src="/logo.png" alt="DoisRMenuVendas" className="h-10 w-10" />
+            <img src="https://i.postimg.cc/SJ8fNSLg/logo-2R.jpg" alt="DoisRMenuVendas" className="h-10 w-10 rounded-full" />
             <span className="text-white font-display font-bold text-xl">
               DoisR<span className="text-gaming-red">Menu</span>Vendas
             </span>
