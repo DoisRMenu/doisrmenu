@@ -1,5 +1,5 @@
 
-import { DiscordLogo, Phone } from 'lucide-react';
+import { MessagesSquare, Phone } from 'lucide-react';
 
 interface ContactButtonsProps {
   discordLink: string;
@@ -15,7 +15,7 @@ const ContactButtons = ({ discordLink, whatsappLink }: ContactButtonsProps) => {
         rel="noopener noreferrer"
         className="flex-1 flex items-center justify-center gap-2 bg-[#5865F2] hover:bg-[#4752c4] text-white font-bold py-3 px-6 rounded-md transition-all duration-300"
       >
-        <DiscordLogo className="h-5 w-5" />
+        <MessagesSquare className="h-5 w-5" />
         <span>Discord</span>
       </a>
       

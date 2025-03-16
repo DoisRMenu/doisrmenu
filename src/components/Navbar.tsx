@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Youtube, DiscordLogo, Phone, ChevronDown } from 'lucide-react';
+import { Menu, X, Youtube, MessagesSquare, Phone, ChevronDown } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -72,7 +72,7 @@ const Navbar = () => {
                   rel="noopener noreferrer" 
                   className="flex items-center px-4 py-3 text-white hover:bg-gaming-light-gray transition-colors"
                 >
-                  <DiscordLogo className="mr-2 h-5 w-5 text-gaming-red" />
+                  <MessagesSquare className="mr-2 h-5 w-5 text-gaming-red" />
                   Discord
                 </a>
                 <a 
@@ -121,7 +121,7 @@ const Navbar = () => {
               <h3 className="text-gaming-red font-bold mb-2">Contatos</h3>
               <div className="flex space-x-4 mt-2">
                 <a href="https://discord.gg/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gaming-red">
-                  <DiscordLogo size={24} />
+                  <MessagesSquare size={24} />
                 </a>
                 <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gaming-red">
                   <Phone size={24} />

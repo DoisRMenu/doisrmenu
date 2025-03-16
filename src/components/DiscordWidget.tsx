@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { Loader2, DiscordLogo } from 'lucide-react';
+import { Loader2, MessagesSquare } from 'lucide-react';
 
 interface DiscordData {
   id: string;
@@ -56,7 +56,7 @@ const DiscordWidget = () => {
     return (
       <div className="bg-gaming-gray border border-gaming-light-gray rounded-lg p-5">
         <div className="flex items-center space-x-2 mb-4">
-          <DiscordLogo className="h-6 w-6 text-gaming-red" />
+          <MessagesSquare className="h-6 w-6 text-gaming-red" />
           <h3 className="text-white font-bold">Discord</h3>
         </div>
         <div className="h-[200px] flex flex-col items-center justify-center">
@@ -80,7 +80,7 @@ const DiscordWidget = () => {
     <div className="bg-gaming-gray border border-gaming-light-gray rounded-lg p-5 shadow-md">
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center space-x-2">
-          <DiscordLogo className="h-6 w-6 text-gaming-red" />
+          <MessagesSquare className="h-6 w-6 text-gaming-red" />
           <h3 className="text-white font-bold">{discordData.name}</h3>
         </div>
         <span className="bg-gaming-red text-white text-xs px-2 py-1 rounded-full">
@@ -114,7 +114,7 @@ const DiscordWidget = () => {
         rel="noopener noreferrer"
         className="game-button w-full flex items-center justify-center text-sm py-2"
       >
-        <DiscordLogo className="h-5 w-5 mr-2" />
+        <MessagesSquare className="h-5 w-5 mr-2" />
         Entrar no Discord
       </a>
     </div>

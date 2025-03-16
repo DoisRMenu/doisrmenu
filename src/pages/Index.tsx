@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import Hero from '../components/Hero';
 import GameCard from '../components/GameCard';
 import DiscordWidget from '../components/DiscordWidget';
-import { Youtube, DiscordLogo, Phone } from 'lucide-react';
+import { Youtube, MessagesSquare, Phone } from 'lucide-react';
 
 const Index = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -78,7 +78,7 @@ const Index = () => {
             <div className="bg-gaming-gray p-6 rounded-lg border border-gaming-light-gray hover:border-gaming-red/30 transition-all duration-300">
               <div className="w-14 h-14 rounded-full bg-gaming-red/20 flex items-center justify-center mb-4">
                 <div className="w-10 h-10 rounded-full bg-gaming-red flex items-center justify-center">
-                  <DiscordLogo className="h-5 w-5 text-white" />
+                  <MessagesSquare className="h-5 w-5 text-white" />
                 </div>
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Suporte via Discord</h3>

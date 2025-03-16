@@ -1,5 +1,5 @@
 
-import { Youtube, DiscordLogo, Phone } from 'lucide-react';
+import { Youtube, MessagesSquare, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -26,7 +26,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-gaming-gray flex items-center justify-center hover:bg-gaming-red transition-colors duration-300"
               >
-                <DiscordLogo size={20} className="text-white" />
+                <MessagesSquare size={20} className="text-white" />
               </a>
               <a 
                 href="https://wa.me/" 
@@ -84,7 +84,7 @@ const Footer = () => {
             <h4 className="text-white font-bold text-lg mb-4">Contato</h4>
             <ul className="space-y-3">
               <li className="flex items-center space-x-3 text-gray-400">
-                <DiscordLogo size={20} className="text-gaming-red" />
+                <MessagesSquare size={20} className="text-gaming-red" />
                 <span>Nosso Discord</span>
               </li>
               <li className="flex items-center space-x-3 text-gray-400">
