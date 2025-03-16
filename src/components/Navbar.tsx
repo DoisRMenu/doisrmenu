@@ -67,7 +67,7 @@ const Navbar = () => {
               </button>
               <div className="absolute hidden group-hover:block right-0 mt-2 w-48 bg-gaming-gray border border-gaming-light-gray rounded-md shadow-lg overflow-hidden z-50 animate-fade-in">
                 <a 
-                  href="https://discord.gg/" 
+                  href="https://discord.gg/Dzu4THNpFj" 
                   target="_blank"
                   rel="noopener noreferrer" 
                   className="flex items-center px-4 py-3 text-white hover:bg-gaming-light-gray transition-colors"
@@ -76,7 +76,7 @@ const Navbar = () => {
                   Discord
                 </a>
                 <a 
-                  href="https://wa.me/" 
+                  href="https://wa.me/5521999375445" 
                   target="_blank"
                   rel="noopener noreferrer" 
                   className="flex items-center px-4 py-3 text-white hover:bg-gaming-light-gray transition-colors"
@@ -120,10 +120,10 @@ const Navbar = () => {
             <div className="py-2 border-b border-gaming-light-gray">
               <h3 className="text-gaming-red font-bold mb-2">Contatos</h3>
               <div className="flex space-x-4 mt-2">
-                <a href="https://discord.gg/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gaming-red">
+                <a href="https://discord.gg/Dzu4THNpFj" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gaming-red">
                   <MessagesSquare size={24} />
                 </a>
-                <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gaming-red">
+                <a href="https://wa.me/5521999375445" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gaming-red">
                   <Phone size={24} />
                 </a>
                 <a href="https://youtube.com/@doisrmods2" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gaming-red">

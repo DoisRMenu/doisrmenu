@@ -24,8 +24,8 @@ const DiscordWidget = () => {
     const fetchDiscordData = async () => {
       try {
         setLoading(true);
-        // This is a placeholder server ID - replace with your server ID
-        const response = await fetch('https://discord.com/api/guilds/YOUR_SERVER_ID/widget.json');
+        // Use the correct server ID for Dzu4THNpFj
+        const response = await fetch('https://discord.com/api/guilds/1077696606667923626/widget.json');
         
         if (!response.ok) {
           throw new Error('Failed to fetch Discord data');
@@ -64,7 +64,7 @@ const DiscordWidget = () => {
             {error || 'Widget temporariamente indisponível'}
           </p>
           <a 
-            href="https://discord.gg/" 
+            href="https://discord.gg/Dzu4THNpFj" 
             target="_blank" 
             rel="noopener noreferrer"
             className="game-button text-sm py-2"
@@ -109,7 +109,7 @@ const DiscordWidget = () => {
       </div>
       
       <a 
-        href={discordData.instant_invite} 
+        href={discordData.instant_invite || "https://discord.gg/Dzu4THNpFj"} 
         target="_blank" 
         rel="noopener noreferrer"
         className="game-button w-full flex items-center justify-center text-sm py-2"

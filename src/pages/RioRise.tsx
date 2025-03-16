@@ -3,7 +3,8 @@ import { useState, useEffect } from 'react';
 import MenuFeatures from '../components/MenuFeatures';
 import ContactButtons from '../components/ContactButtons';
 import FeatureList from '../components/FeatureList';
-import { ArrowDown, AlertCircle } from 'lucide-react';
+import { ArrowDown, AlertCircle, Shield } from 'lucide-react';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "../components/ui/table";
 
 const RioRise = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -74,6 +75,13 @@ const RioRise = () => {
     "Menu intuitivo e fácil de usar"
   ];
 
+  const pricingOptions = [
+    { duration: "1 Dia", price: "R$ 14,00" },
+    { duration: "3 Dias", price: "R$ 25,00", discounted: true, originalPrice: "R$ 30,00" },
+    { duration: "1 Semana", price: "R$ 50,00" },
+    { duration: "Permanente", price: "R$ 100,00" }
+  ];
+
   return (
     <div className="min-h-screen pt-20 pb-16">
       {/* Hero Section */}
@@ -129,6 +137,13 @@ const RioRise = () => {
                 </p>
               </div>
               
+              <div className="bg-gaming-gray/50 border border-gaming-light-gray/30 rounded-lg p-4 mb-8 flex gap-3">
+                <Shield className="h-6 w-6 text-gaming-red shrink-0" />
+                <p className="text-gray-300 text-sm">
+                  <span className="font-bold text-white">100% Seguro:</span> Você pode inserir seu login e senha com total segurança (100% protegido).
+                </p>
+              </div>
+              
               <p className="text-gray-300 mb-6">
                 Nosso script premium para Rio Rise oferece um menu completo com recursos de teleporte, vida, colete, armas e restauração de veículos. Tudo em uma interface intuitiva e fácil de utilizar, projetada para melhorar sua experiência de jogo.
               </p>
@@ -138,7 +153,37 @@ const RioRise = () => {
               </p>
             </div>
             
-            <div className={`${isLoaded ? 'animate-fade-in' : 'opacity-0'}`} style={{ animationDelay: '200ms' }}>
+            <div className={`mb-12 ${isLoaded ? 'animate-fade-in' : 'opacity-0'}`} style={{ animationDelay: '200ms' }}>
+              <h2 className="text-2xl md:text-3xl font-display font-bold mb-6 text-white">
+                Tabela de <span className="text-gaming-red">Preços</span>
+              </h2>
+              
+              <div className="overflow-hidden rounded-lg border border-gaming-light-gray/30">
+                <Table>
+                  <TableHeader className="bg-gaming-gray">
+                    <TableRow>
+                      <TableHead className="text-white font-bold">Período</TableHead>
+                      <TableHead className="text-white font-bold text-right">Preço</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    {pricingOptions.map((option, index) => (
+                      <TableRow key={index} className="bg-gaming-gray/50 hover:bg-gaming-gray/80">
+                        <TableCell className="text-white font-medium">{option.duration}</TableCell>
+                        <TableCell className="text-right">
+                          <span className="text-gaming-red font-bold">{option.price}</span>
+                          {option.discounted && (
+                            <span className="ml-2 text-gray-400 line-through text-sm">{option.originalPrice}</span>
+                          )}
+                        </TableCell>
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </div>
+            </div>
+            
+            <div className={`${isLoaded ? 'animate-fade-in' : 'opacity-0'}`} style={{ animationDelay: '300ms' }}>
               <h2 className="text-2xl md:text-3xl font-display font-bold mb-6 text-white">
                 Recursos do <span className="text-gaming-red">Menu</span>
               </h2>
@@ -191,10 +236,17 @@ const RioRise = () => {
                     </ul>
                   </div>
                   
+                  <div className="bg-gaming-light-gray/50 rounded-lg p-3 mb-6 flex items-center gap-2">
+                    <Shield className="h-5 w-5 text-gaming-red" />
+                    <p className="text-sm text-gray-300">
+                      Login e senha 100% protegidos
+                    </p>
+                  </div>
+                  
                   <h4 className="text-white font-medium mb-2">Para comprar, entre em contato:</h4>
                   <ContactButtons 
-                    discordLink="https://discord.gg/"
-                    whatsappLink="https://wa.me/"
+                    discordLink="https://discord.gg/Dzu4THNpFj"
+                    whatsappLink="https://wa.me/5521999375445"
                   />
                 </div>
               </div>

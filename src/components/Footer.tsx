@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <img src="/logo.png" alt="DoisRMenuVendas" className="h-10 w-10" />
+              <img src="https://i.postimg.cc/SJ8fNSLg/logo-2R.jpg" alt="DoisRMenuVendas" className="h-10 w-10 rounded-full" />
               <h3 className="text-white font-display font-bold text-xl">
                 DoisR<span className="text-gaming-red">Menu</span>Vendas
               </h3>
@@ -21,7 +21,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://discord.gg/" 
+                href="https://discord.gg/Dzu4THNpFj" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-gaming-gray flex items-center justify-center hover:bg-gaming-red transition-colors duration-300"
@@ -29,7 +29,7 @@ const Footer = () => {
                 <MessagesSquare size={20} className="text-white" />
               </a>
               <a 
-                href="https://wa.me/" 
+                href="https://wa.me/5521999375445" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-gaming-gray flex items-center justify-center hover:bg-gaming-red transition-colors duration-300"
