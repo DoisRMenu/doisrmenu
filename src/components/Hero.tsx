@@ -37,14 +37,15 @@ const Hero = () => {
               Horizonte RP Contas
             </a>
           </div>
-          
-          <div 
-            className="absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer animate-bounce"
-            onClick={scrollToContent}
-          >
-            <ChevronDown className="h-8 w-8 text-gaming-red" />
-          </div>
         </div>
+      </div>
+      
+      {/* Centered Scroll Arrow - Fixed positioning */}
+      <div 
+        className="absolute bottom-10 left-0 right-0 mx-auto flex justify-center cursor-pointer animate-bounce"
+        onClick={scrollToContent}
+      >
+        <ChevronDown className="h-8 w-8 text-gaming-red" />
       </div>
     </div>
   );

@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Youtube, MessagesSquare, Phone, ChevronDown } from 'lucide-react';
@@ -36,9 +35,8 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex justify-between items-center">
-          {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <img src="https://i.postimg.cc/SJ8fNSLg/logo-2R.jpg" alt="DoisRMenuVendas" className="h-10 w-10 rounded-full" />
+          {/* Logo - Text only, no image */}
+          <Link to="/" className="flex items-center">
             <span className="text-white font-display font-bold text-xl">
               DoisR<span className="text-gaming-red">Menu</span>Vendas
             </span>
